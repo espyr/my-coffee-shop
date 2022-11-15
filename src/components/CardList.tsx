@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import React, { useState } from 'react';
+import React from 'react';
 import { CoffeeCard } from './CoffeeCard';
 export interface Coffee {
   description: string;
@@ -8,7 +8,6 @@ export interface Coffee {
   ingredients: string[];
   title: string;
 }
-/* eslint-disable-next-line */
 interface CardListProps {
   dataFiltered: Coffee[] | undefined}
 

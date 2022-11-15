@@ -1,19 +1,12 @@
-import {
-  TextField,
-  IconButton,
-  Box,
-  Input,
-  InputAdornment,
-  styled,
-} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import { Box, InputAdornment, TextField } from '@mui/material';
 interface SearchBar {
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const SearchBar: React.FC<SearchBar> = ({ setSearchQuery }) => {
   return (
-    <Box sx={{ justifyItems: 'center', py: 3 }}>
+    <Box sx={{ justifyItems: 'center', py: 3, alignSelf: 'center' }}>
       <TextField
         sx={{
           '& label.Mui-focused': {
